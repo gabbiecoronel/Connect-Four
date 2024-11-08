@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameOptionsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="#fce803"
+    tools:context=".GameOptionsFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="304dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- "Select Difficulty" TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_difficulty"
+            android:textSize="25sp" />
+
+        <!-- RadioButtons in vertical layout -->
+        <RadioGroup
+            android:id="@+id/buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <!-- Easy difficulty RadioButton -->
+            <RadioButton
+                android:id="@+id/easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/easy"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!-- Medium difficulty RadioButton -->
+            <RadioButton
+                android:id="@+id/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medium"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!-- Hard difficulty RadioButton -->
+            <RadioButton
+                android:id="@+id/hard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hard"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
